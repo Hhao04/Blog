@@ -14,16 +14,33 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Đơn Giản Của Tôi</title>
+    <title>Blog Của Tôi</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+    .login-admin {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 0.9em;
+    }
+    </style>
+
 </head>
+<header style="position: relative;">
+    <h1>Blog</h1>
+    <nav>
+        <a href="index.php">Trang chủ</a>
+    </nav>
+    <a href="/admin/login.php" class="login-admin">Đăng nhập Admin</a>
+</header>
+
 <body>
     <div class="container">
         <header>
             <h1>Blog</h1>
             <nav>
                 <a href="index.php">Trang chủ</a>
-                <a href="admin/">Quản lý bài viết (Admin)</a>
             </nav>
         </header>
 

@@ -1,4 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['is_admin'])) {
+    header('Location: login.php');
+    exit;
+}
+?>
+
+<?php
 // Blog/admin/create.php
 
 require_once '../config.php';
@@ -43,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="container">
         <header>
-            <h1>Admin Panel</h1>
+            <h1>Admin</h1>
             <nav>
                 <a href="../index.php">Xem Blog</a>
                 <a href="index.php">Quản lý Bài viết</a>

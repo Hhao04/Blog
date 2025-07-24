@@ -36,7 +36,6 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <h1>Blog Đơn Giản</h1>
             <nav>
                 <a href="index.php">Trang chủ</a>
-                <a href="admin/">Quản lý bài viết (Admin)</a>
             </nav>
         </header>
 
