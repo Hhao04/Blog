@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+main {
+    padding: 20px 0;
+}
+
+article {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+article h3 a, article h2 {
+    color: #0056b3;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+article h3 a:hover {
+    text-decoration: underline;
+}
+
+.meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    margin-top: 15px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+form {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical; /* Cho phép thay đổi kích thước theo chiều dọc */
+}
+
+form button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px; /* Thêm khoảng cách cho các nút */
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    background-color: #ffe0e0;
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    background-color: #e0ffe0;
+    border: 1px solid green;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Style cho bảng admin */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+table tr:hover {
+    background-color: #f1f1f1;
+}
+.action-buttons a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+    margin-right: 5px;
+    display: inline-block;
+}
+.action-buttons .edit-btn {
+    background-color: #28a745; /* Green */
+}
+.action-buttons .delete-btn {
+    background-color: #dc3545; /* Red */
+}
+.action-buttons a:hover {
+    opacity: 0.9;
+}
